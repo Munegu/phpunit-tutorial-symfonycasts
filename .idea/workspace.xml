@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="262d530e-cc81-42dc-a348-8b2069c4b0be" name="Default Changelist" comment="" />
+    <list default="true" id="262d530e-cc81-42dc-a348-8b2069c4b0be" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppBundle/Factory/DinosaurFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/AppBundle/Factory/DinosaurFactoryTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Dinosaur.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Dinosaur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/AppBundle/Entity/DinosaurTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/AppBundle/Entity/DinosaurTest.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -58,13 +68,18 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1jYdeJlz60If9yUIoGmmHyDg6zC" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/AppBundle/Entity" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -91,11 +106,25 @@
       <option name="presentableId" value="Default" />
       <updated>1603985053619</updated>
       <workItem from="1603985055254" duration="2899000" />
+      <workItem from="1603988189885" duration="113000" />
+      <workItem from="1604047246324" duration="3576000" />
     </task>
+    <task id="LOCAL-00001" summary="First Commit">
+      <created>1603988228112</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603988228112</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="514" y="337" key="#Composer" timestamp="1603985063098">
@@ -106,14 +135,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900/1440.87.1920.1080@0.0.1440.900" timestamp="1603988095731" />
-    <state x="505" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1603986972493">
+    <state x="505" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1604051395426">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="505" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.87.1920.1080@0.0.1440.900" timestamp="1603986972493" />
-    <state x="271" y="183" key="NewPhpClassDialog" timestamp="1603986245589">
+    <state x="505" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.87.1920.1080@0.0.1440.900" timestamp="1604051395426" />
+    <state x="186" y="53" key="CommitChangelistDialog2" timestamp="1603988227771">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="271" y="183" key="NewPhpClassDialog/0.0.1440.900/1440.87.1920.1080@0.0.1440.900" timestamp="1603986245589" />
+    <state x="186" y="53" key="CommitChangelistDialog2/0.0.1440.900/1440.87.1920.1080@0.0.1440.900" timestamp="1603988227771" />
+    <state x="271" y="183" key="NewPhpClassDialog" timestamp="1604050306443">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="271" y="183" key="NewPhpClassDialog/0.0.1440.900/1440.87.1920.1080@0.0.1440.900" timestamp="1604050306443" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1603988234883">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.87.1920.1080@0.0.1440.900" timestamp="1603988234883" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1603988160406">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
