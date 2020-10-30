@@ -14,13 +14,6 @@ class Dinosaur
 
     const HUGE = 30;
 
-    /**
-     * @return bool
-     */
-    public function isCarnivorous(): bool
-    {
-        return $this->isCarnivorous;
-    }
 
     /**
      * @ORM\Column(type="integer")
@@ -36,6 +29,11 @@ class Dinosaur
      * @ORM\Column(type="boolean")
      */
     private $isCarnivorous;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Enclosure", inversedBy="dinosaurs")
+     */
+    private $enclosure;
 
     /**
      * Dinosaur constructor.
@@ -80,6 +78,14 @@ class Dinosaur
     public function getGenus(): string
     {
         return $this->genus;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isCarnivorous(): bool
+    {
+        return $this->isCarnivorous;
     }
 
 }

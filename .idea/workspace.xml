@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="262d530e-cc81-42dc-a348-8b2069c4b0be" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Enclosure.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Security.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppBundle/Exception/DinosaursAreRunningRampantException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppBundle/Exception/NotABuffetException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/AppBundle/Entity/EnclosureTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Dinosaur.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Dinosaur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Factory/DinosaurFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Factory/DinosaurFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/AppBundle/Factory/DinosaurFactoryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/AppBundle/Factory/DinosaurFactoryTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +108,7 @@
       <updated>1603985053619</updated>
       <workItem from="1603985055254" duration="2899000" />
       <workItem from="1603988189885" duration="113000" />
-      <workItem from="1604047246324" duration="8351000" />
+      <workItem from="1604047246324" duration="12640000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1603988228112</created>
@@ -121,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604051440983</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="First Commit">
+      <created>1604057709888</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604057709888</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,25 +150,30 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900/1440.87.1920.1080@0.0.1440.900" timestamp="1603988095731" />
-    <state x="505" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1604054173375">
+    <state x="505" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1604066462422">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="505" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.87.1920.1080@0.0.1440.900" timestamp="1604054173375" />
-    <state x="186" y="53" key="CommitChangelistDialog2" timestamp="1604051440742">
+    <state x="505" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.87.1920.1080@0.0.1440.900" timestamp="1604066462422" />
+    <state x="555" y="243" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604067559966">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="186" y="53" key="CommitChangelistDialog2/0.0.1440.900/1440.87.1920.1080@0.0.1440.900" timestamp="1604051440742" />
-    <state x="271" y="183" key="NewPhpClassDialog" timestamp="1604050306443">
+    <state x="555" y="243" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900/1440.87.1920.1080@0.0.1440.900" timestamp="1604067559966" />
+    <state x="186" y="53" key="CommitChangelistDialog2" timestamp="1604057709706">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="271" y="183" key="NewPhpClassDialog/0.0.1440.900/1440.87.1920.1080@0.0.1440.900" timestamp="1604050306443" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1604051446202">
+    <state x="186" y="53" key="CommitChangelistDialog2/0.0.1440.900/1440.87.1920.1080@0.0.1440.900" timestamp="1604057709706" />
+    <state x="271" y="183" key="NewPhpClassDialog" timestamp="1604069064798">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.87.1920.1080@0.0.1440.900" timestamp="1604051446202" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1603988160406">
+    <state x="271" y="183" key="NewPhpClassDialog/0.0.1440.900/1440.87.1920.1080@0.0.1440.900" timestamp="1604069064798" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1604057714123">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.87.1920.1080@0.0.1440.900" timestamp="1604057714123" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1604067946451">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/1440.110.1920.1057@0.0.1440.900" timestamp="1603988160406" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/1440.87.1920.1080@0.0.1440.900" timestamp="1604067946451" />
   </component>
 </project>
