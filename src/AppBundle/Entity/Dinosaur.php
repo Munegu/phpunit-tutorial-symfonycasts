@@ -10,6 +10,18 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Dinosaur
 {
+    const LARGE = 10;
+
+    const HUGE = 30;
+
+    /**
+     * @return bool
+     */
+    public function isCarnivorous(): bool
+    {
+        return $this->isCarnivorous;
+    }
+
     /**
      * @ORM\Column(type="integer")
      */
