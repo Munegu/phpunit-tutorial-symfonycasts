@@ -84,5 +84,13 @@ class Enclosure
         $this->securities[] = $security;
     }
 
+    /**
+     * @return Security[]|Collection
+     */
+    public function getSecurities()
+    {
+        return $this->securities;
+    }
+
 
 }
