@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="262d530e-cc81-42dc-a348-8b2069c4b0be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Service/DinosaurLengthDeterminator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Service/EnclosureBuilderService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/AppBundle/Service/DinosaurLengthDeterminatorTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/AppBundle/Service/EnclosureBuilderServiceTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppBundle/Service/EnclosureBuilderServiceProphecyTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Enclosure.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Enclosure.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Factory/DinosaurFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Factory/DinosaurFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/AppBundle/Factory/DinosaurFactoryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/AppBundle/Factory/DinosaurFactoryTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Service/EnclosureBuilderService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Service/EnclosureBuilderService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/AppBundle/Service/EnclosureBuilderServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/AppBundle/Service/EnclosureBuilderServiceTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +82,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/AppBundle/Service" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -111,7 +108,8 @@
       <updated>1603985053619</updated>
       <workItem from="1603985055254" duration="2899000" />
       <workItem from="1603988189885" duration="113000" />
-      <workItem from="1604047246324" duration="16776000" />
+      <workItem from="1604047246324" duration="16822000" />
+      <workItem from="1604138996676" duration="2641000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1603988228112</created>
@@ -141,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604070088649</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="First Commit">
+      <created>1604077894837</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604077894837</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,18 +173,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="555" y="243" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900/1440.87.1920.1080@0.0.1440.900" timestamp="1604067559966" />
-    <state x="186" y="53" key="CommitChangelistDialog2" timestamp="1604070088504">
+    <state x="186" y="53" key="CommitChangelistDialog2" timestamp="1604077894680">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="186" y="53" key="CommitChangelistDialog2/0.0.1440.900/1440.87.1920.1080@0.0.1440.900" timestamp="1604070088504" />
-    <state x="271" y="183" key="NewPhpClassDialog" timestamp="1604077052241">
+    <state x="186" y="53" key="CommitChangelistDialog2/0.0.1440.900/1440.87.1920.1080@0.0.1440.900" timestamp="1604077894680" />
+    <state x="271" y="183" key="NewPhpClassDialog" timestamp="1604140277473">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="271" y="183" key="NewPhpClassDialog/0.0.1440.900/1440.87.1920.1080@0.0.1440.900" timestamp="1604077052241" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1604070093188">
+    <state x="271" y="183" key="NewPhpClassDialog/0.0.1440.900/1440.87.1920.1080@0.0.1440.900" timestamp="1604140277473" />
+    <state x="221" y="89" key="SettingsEditor" timestamp="1604140981184">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.87.1920.1080@0.0.1440.900" timestamp="1604070093188" />
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900/1440.87.1920.1080@0.0.1440.900" timestamp="1604140981184" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1604077897975">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.87.1920.1080@0.0.1440.900" timestamp="1604077897975" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1604067946451">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
