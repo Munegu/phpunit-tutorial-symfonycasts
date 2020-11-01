@@ -40,6 +40,7 @@ class EnclosureBuilderService
         $this->addDinosaurs($numberOfDinosaurs, $enclosure);
 
         $this->entityManager->persist($enclosure);
+
         $this->entityManager->flush();
 
         return $enclosure;
@@ -58,13 +59,13 @@ class EnclosureBuilderService
 
     private function addDinosaurs(int $numberOfDinosaurs, Enclosure $enclosure)
     {
-        for ($i = 0; $i < $numberOfDinosaurs; $i++){
-            $lengths = ['small', 'large', 'huge'];
-            $diets = ['herbivore', 'carnivorous'];
-            // We should not mix herbivore and carnivorous together,
-            // so use the same diet for every dinosaur.
-            $diet = $diets[array_rand($diets)];
+        $lengths = ['small', 'large', 'huge'];
+        $diets = ['herbivore', 'carnivorous'];
+        // We should not mix herbivore and carnivorous together,
+        // so use the same diet for every dinosaur.
+        $diet = $diets[array_rand($diets)];
 
+        for ($i = 0; $i < $numberOfDinosaurs; $i++) {
             $length = $lengths[array_rand($lengths)];
             $specification = "{$length} {$diet} dinosaur";
             $dinosaur = $this->dinosaurFactory->growFromSpecification($specification);

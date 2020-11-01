@@ -11,9 +11,14 @@ use Doctrine\ORM\Mapping as ORM;
 class Dinosaur
 {
     const LARGE = 10;
-
     const HUGE = 30;
 
+    /**
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     * @ORM\Column(type="integer")
+     */
+    private $id;
 
     /**
      * @ORM\Column(type="integer")
@@ -21,42 +26,34 @@ class Dinosaur
     private $length = 0;
 
     /**
+     * @var string
      * @ORM\Column(type="string")
      */
     private $genus;
 
     /**
+     * @var bool
      * @ORM\Column(type="boolean")
      */
     private $isCarnivorous;
 
     /**
+     * @var Enclosure
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Enclosure", inversedBy="dinosaurs")
      */
     private $enclosure;
 
-    /**
-     * Dinosaur constructor.
-     * @param string $genus
-     * @param bool $isCarnivorous
-     */
     public function __construct(string $genus = 'Unknown', bool $isCarnivorous = false)
     {
         $this->genus = $genus;
         $this->isCarnivorous = $isCarnivorous;
     }
 
-    /**
-     * @return int
-     */
     public function getLength(): int
     {
         return $this->length;
     }
 
-    /**
-     * @param int $length
-     */
     public function setLength(int $length)
     {
         $this->length = $length;
@@ -72,20 +69,18 @@ class Dinosaur
         );
     }
 
-    /**
-     * @return string
-     */
     public function getGenus(): string
     {
         return $this->genus;
     }
 
-    /**
-     * @return bool
-     */
     public function isCarnivorous(): bool
     {
         return $this->isCarnivorous;
     }
 
+    public function setEnclosure(Enclosure $enclosure)
+    {
+        $this->enclosure = $enclosure;
+    }
 }

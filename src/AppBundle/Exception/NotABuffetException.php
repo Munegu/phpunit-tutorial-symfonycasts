@@ -1,12 +1,8 @@
 <?php
 
-
 namespace AppBundle\Exception;
 
-
-use Exception;
-
-class NotABuffetException extends Exception
+class NotABuffetException extends \Exception
 {
-    protected $message = 'Please do not mixthe carnivorous and no carnivorous dinosaurs!';
+    protected $message = 'Please do not mix the carnivorous and non-carnivorous dinosaurs. It will be a massacre!';
 }

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="@localhost" uuid="e05d1a21-584a-4adf-8e86-14c08fc06c67">
+    <data-source source="LOCAL" name="symfony@localhost" uuid="e05d1a21-584a-4adf-8e86-14c08fc06c67">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/symfony</jdbc-url>
     </data-source>
   </component>
 </project>

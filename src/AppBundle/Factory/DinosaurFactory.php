@@ -1,74 +1,46 @@
 <?php
 
-
 namespace AppBundle\Factory;
-
 
 use AppBundle\Entity\Dinosaur;
 use AppBundle\Service\DinosaurLengthDeterminator;
 
-/**
- * Class DinosaurFactory
- * @package AppBundle\Factory
- */
 class DinosaurFactory
 {
-    /**
-     * @var DinosaurLengthDeterminator
-     */
-    private $dinosaurLengthDeterminator;
+    private $lengthDeterminator;
 
-    /**
-     * DinosaurFactory constructor.
-     * @param DinosaurLengthDeterminator $dinosaurLengthDeterminator
-     */
-    public function __construct(DinosaurLengthDeterminator $dinosaurLengthDeterminator)
+    public function __construct(DinosaurLengthDeterminator $lengthDeterminator)
     {
-        $this->dinosaurLengthDeterminator = $dinosaurLengthDeterminator;
+        $this->lengthDeterminator = $lengthDeterminator;
     }
 
-
-    /**
-     * @param int $length
-     * @return Dinosaur
-     */
     public function growVelociraptor(int $length): Dinosaur
     {
-        return $this->createDinossaur('Velociraptor',true,$length);
+        return $this->createDinosaur('Velociraptor', true, $length);
     }
 
     public function growFromSpecification(string $specification): Dinosaur
     {
-        //defaults
-        $codeName = 'InG-'.random_int(1,99999);
-        $length = $this->dinosaurLengthDeterminator->getLengthFromSpecification($specification);
+        // defaults
+        $codeName = 'InG-' . random_int(1, 99999);
+        $length = $this->lengthDeterminator->getLengthFromSpecification($specification);
         $isCarnivorous = false;
 
-        if (stripos($specification, 'carnivorous') !== false){
+        if (stripos($specification, 'carnivorous') !== false) {
             $isCarnivorous = true;
         }
 
-        $dinosaur = $this->createDinossaur($codeName, $isCarnivorous, $length);
+        $dinosaur = $this->createDinosaur($codeName, $isCarnivorous, $length);
 
         return $dinosaur;
-
     }
 
-    /**
-     * @param string $genus
-     * @param bool $isCarnovorous
-     * @param int $length
-     * @return Dinosaur
-     */
-    private function createDinossaur(string $genus, bool $isCarnovorous, int $length): Dinosaur
+    private function createDinosaur(string $genus, bool $isCarnivorous, int $length): Dinosaur
     {
-        $dinosaur = new Dinosaur($genus, $isCarnovorous);
+        $dinosaur = new Dinosaur($genus, $isCarnivorous);
+
         $dinosaur->setLength($length);
 
         return $dinosaur;
     }
-
-
-
-
 }

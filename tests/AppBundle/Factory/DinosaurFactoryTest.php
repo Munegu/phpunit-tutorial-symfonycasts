@@ -1,13 +1,10 @@
 <?php
 
-
 namespace Tests\AppBundle\Factory;
-
 
 use AppBundle\Entity\Dinosaur;
 use AppBundle\Factory\DinosaurFactory;
 use AppBundle\Service\DinosaurLengthDeterminator;
-use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 
 class DinosaurFactoryTest extends TestCase
@@ -18,7 +15,7 @@ class DinosaurFactoryTest extends TestCase
     private $factory;
 
     /**
-     * @var DinosaurLengthDeterminator|MockObject
+     * @var \PHPUnit_Framework_MockObject_MockObject
      */
     private $lengthDeterminator;
 
@@ -28,8 +25,7 @@ class DinosaurFactoryTest extends TestCase
         $this->factory = new DinosaurFactory($this->lengthDeterminator);
     }
 
-
-    public function testItGrowsAVelociraptor()
+    public function testItGrowsALargeVelociraptor()
     {
         $dinosaur = $this->factory->growVelociraptor(5);
 
@@ -39,54 +35,45 @@ class DinosaurFactoryTest extends TestCase
         $this->assertSame(5, $dinosaur->getLength());
     }
 
-    public function testItGrowsATriceratops()
+    public function testItGrowsATriceraptors()
     {
         $this->markTestIncomplete('Waiting for confirmation from GenLab');
     }
 
     public function testItGrowsABabyVelociraptor()
     {
-        if (!class_exists('Nanny')){
-            $this->markTestSkipped('There is nobody to watch the baby');
+        if (!class_exists('Nanny')) {
+            $this->markTestSkipped('There is nobody to watch the baby!');
         }
 
         $dinosaur = $this->factory->growVelociraptor(1);
+
         $this->assertSame(1, $dinosaur->getLength());
-
-
     }
 
     /**
      * @dataProvider getSpecificationTests
      */
-    public function testItGrowsADinosaurFromASpecification(string $spec, bool $expectedIsCarnivorous)
+    public function testItGrowsADinosaurFromSpecification(string $spec, bool $expectedIsCarnivorous)
     {
         $this->lengthDeterminator->expects($this->once())
-        ->method('getLengthFromSpecification')
-        ->with($spec)
-        ->willReturn(20)
-        ;
+            ->method('getLengthFromSpecification')
+            ->with($spec)
+            ->willReturn(20);
 
         $dinosaur = $this->factory->growFromSpecification($spec);
 
-
         $this->assertSame($expectedIsCarnivorous, $dinosaur->isCarnivorous(), 'Diets do not match');
         $this->assertSame(20, $dinosaur->getLength());
-
     }
 
     public function getSpecificationTests()
     {
         return [
-            // specification, is carnivorous
+            // specification, is large, is carnivorous
             ['large carnivorous dinosaur', true],
-            'default response' => ['give me all the cookies', false],
-            ['large herbivore', false]
+            'default response' => ['give me all the cookies!!!', false],
+            ['large herbivore', false],
         ];
     }
-
-
-
-
-
 }
